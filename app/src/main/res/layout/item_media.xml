@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:background="@drawable/main_bg">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/media_ivPoster"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/ic_poster_place_holder"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/media_tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/media_ivPoster"
+        app:layout_constraintStart_toStartOf="@+id/media_ivPoster"
+        app:layout_constraintEnd_toEndOf="@+id/media_ivPoster"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
